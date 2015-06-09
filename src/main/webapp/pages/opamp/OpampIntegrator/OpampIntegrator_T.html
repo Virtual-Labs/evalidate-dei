@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Theory</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+}
+
+ul {
+	list-style:none;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="OpampIntegrator_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="OpampIntegrator_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="OpampIntegrator_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="OpampIntegrator_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="OpampIntegrator_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="OpampIntegrator_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="OpampIntegrator_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="OpampIntegrator_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Op-amp Integrator</b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Theory</b></font><br /><br />
+       
+<font size="2" ><b>
+<font size="3"><u>Op-amp Integrator Circuit</u><br /><br /></font>
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-T1.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.1 Op-amp Integrator Circuit</font></center></span>
+</center>
+<br />
+
+<p align="justify">
+As its name implies, the Op-amp Integrator is an operational amplifier circuit that performs the mathematical operation of Integration that is we can cause the output to respond to changes in the input voltage over time as the Op-amp integrator produces an output voltage which is proportional to the integral of the input voltage. In other words the magnitude of the output signal is determined by the length of time a voltage is present at its input as the current through the feedback loop charges or discharges the capacitor as the required negative feedback occurs through the capacitor.<br /><br />
+When a step voltage, V<sub>in</sub> is firstly applied to the input of an integrating amplifier, the uncharged capacitor C has very little resistance and acts a bit like a short circuit allowing maximum current to flow via the input resistor, R<sub>in</sub> as potential difference exists between the two plates. No current flows into the amplifiers input and point X is a virtual earth resulting in zero output. As the impedance of the capacitor at this point is very low, the gain ratio of X<sub>c</sub> / R<sub>in</sub> is also very small giving an overall voltage gain of less than one, (voltage follower circuit).<br /><br />
+As the feedback capacitor C begins to charge up due to the influence of the input voltage, its impedance X<sub>c</sub> slowly increase in proportion to its rate of charge. The capacitor charged up at a rate determined by the RC time constant, (τ) of the series RC network. Negative feedback forces the Op-amp to produce an output voltage that maintains a virtual earth at the Op-amp’s inverting input.
+Since the capacitor is connected between the Op-amp’s inverting input (which is at earth potential) and the Op-amp’s output (which is negative), the potential voltage, Vc developed across the capacitor slowly increases causing the charging current to decrease as the impedance of the capacitor increases. This results in the ratio of X<sub>c</sub> / R<sub>in</sub> increasing producing a linearly increasing ramp output voltage that continues to increase until the capacitor is fully charged.
+At this point the capacitor acts as an open circuit, blocking anymore flow of DC current. The ratio of feedback capacitor to input resistor (X<sub>c</sub> / R<sub>in</sub>) is now infinite resulting in infinite gain. The result of this high gain (similar to the Op-amps open-loop gain), is that the output of the amplifier goes into saturation as shown below. (Saturation occurs when the output voltage of the amplifier swings heavily to one voltage supply rail or the other with little or no control in between).<br /><br /></p>
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-T2.jpg" BORDER=0></td></tr></table>
+</center><br />
+
+<p align="justify">The rate at which the output voltage increases (the rate of change) is determined by the value of the resistor and the capacitor, "RC time constant". By changing this RC time constant value, either by changing the value of the Capacitor C, or the Resistor R, the time in which it takes the output voltage to reach saturation can also be changed.<br /><br /></p>
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-T3.jpg" BORDER=0></td></tr></table>
+</center>
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

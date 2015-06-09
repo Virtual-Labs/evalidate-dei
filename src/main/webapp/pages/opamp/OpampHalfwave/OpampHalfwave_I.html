@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Introduction</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css"/>
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="OpampHalfwave_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="OpampHalfwave_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="OpampHalfwave_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="OpampHalfwave_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="OpampHalfwave_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="OpampHalfwave_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="OpampHalfwave_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="OpampHalfwave_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+
+
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Opamp Half Wave Rectifier</b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Objective</b></font><br/>
+<font size="2">
+<b>
+<p>To design and study precision half wave rectifier using Op-amp.</p><br /><br /></font>
+
+<p><font size="5" color="#054950"><b> Introduction</b> </font></p>
+<font size="2" >
+<p align="justify"> A rectifier is an electrical device that converts alternating current (AC), which periodically reverses direction, to direct current (DC), which flows in only one direction. The process is known as rectification. The precision rectifier, also known as a Superdiode, is a configuration obtained with an operational amplifier in order to have a circuit behave like an ideal diode and rectifier. It is useful for high-precision signal processing.<br /><br />
+	
+Rectifier circuits are used in the design of power supply circuits. In such applications, the voltage being rectified is usually much greater than the diode voltage drop, rendering the exact value of the diode drop unimportant to the proper operation of the rectifier.<br /><br />
+Other applications exist, however, where this is not the case. For example, in instrumentation applications, the signal to be rectified can be of very small amplitude, say 0.1 V, making it impossible to employ the conventional rectifier circuits. Also the need arises for very precise transfer characteristics.<br /><br />
+There are many applications for precision rectifiers, and most are suitable for use in audio circuits. A half wave precision rectifier is implemented using an op amp, and includes the diode in the feedback loop. This effectively cancels the forward voltage drop of the diode, so very low level signals (well below the diode's forward voltage) can still be rectified with minimal error.<br />
+<ul>
+<li>The circuit has some serious limitations. The main one is speed. It will not work well with high frequency signals. </li>
+<li>For a low frequency positive input signal, 100% negative feedback is applied when the diode conducts. The forward voltage is effectively removed by the feedback, and the inverting input follows the positive half of the input signal almost perfectly. </li>
+<li>When the input signal becomes negative, the op amp has no feedback at all, so the output pin of the op amp swings negative as far as it can. </li>
+<li>When the input signal becomes positive again, the op amp's output voltage will take a finite time to swing back to zero, then to forward bias the diode and produce an output. This time is determined by the op amp's slew rate, and even a very fast op amp will be limited to low frequencies.</li>
+</p>
+ <br />
+ <p align="justify"><u>Ideal Op-amp:</u> The figure below shows an example of an ideal operational amplifier. The main part in an amplifier is the dependent voltage source that increases in relation to the voltage drop across Rin, thus amplifying the voltage difference between V + and V -. Many uses have been found for Op-amp and an ideal Op-amp seeks to characterize the physical phenomena that make Op-amps useful.  <br /><br /></p>
+
+<center>
+<img src="../../../images/opamp/OpampHalfwave-I/OpampHalfwave-I.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.1 Op-amp 741</font></center></span>
+</center>
+<br /><br />
+<center>
+<img src="../../../images/opamp/OpampHalfwave-I/OpampHalfwave-I1.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.2 Ideal Op-amp</font></center></span>
+</center>
+<br />
+<p align="justify">Vs+ and Vs- are not connected to the circuit within the Op-amp because they power the dependent voltage source’s circuit. These are notable, however, because they determine the maximum voltage the dependent voltage source can output. For any input voltage the ideal Op-amp has,<br />
+a. Infinite open-loop gain <br />
+b. Infinite bandwidth <br />
+c. Infinite input impedance <br />
+d. Zero offset voltage <br />
+e. Infinite slew rate <br />
+f. Zero output impedance and <br />
+g. Zero noise</p>
+
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

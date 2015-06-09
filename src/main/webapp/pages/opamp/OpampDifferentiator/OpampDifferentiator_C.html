@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Calculations</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="OpampDifferentiator_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="OpampDifferentiator_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="OpampDifferentiator_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="OpampDifferentiator_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="OpampDifferentiator_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="OpampDifferentiator_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="OpampDifferentiator_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="OpampDifferentiator_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+<div class="container_1" align="left">
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Differentiator</b></font><br /><br />       
+        <font size="5" color="#054950"> <b>Calculations &amp; Observations</b></font><br /><br /><br />
+<font size="2" ><b>
+<p align="justify">
+Ok, some math's to explain what's going on! Since the node voltage of the operational amplifier at its inverting input terminal is zero, the current, i flowing through the capacitor will be given as:
+</p>
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampDifferentiator-I/Differentiator-E1.jpg" BORDER=0></td></tr></table>
+</center>
+<br />
+
+The charge on the capacitor equals Capacitance x Voltage across the capacitor
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampDifferentiator-I/Differentiator-E2.jpg" BORDER=0></td></tr></table>
+</center><br />
+
+The rate of change of this charge is: <br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampDifferentiator-I/Differentiator-E3.jpg" BORDER=0></td></tr></table>
+</center><br />
+
+but dQ / dt is the capacitor current i
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampDifferentiator-I/Differentiator-E4.jpg" BORDER=0></td></tr></table>
+</center><br />
+
+From which we have an ideal voltage output for the Op-amp differentiator is given as:
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampDifferentiator-I/Differentiator-E5.jpg" BORDER=0></td></tr></table>
+</center>
+<p align="justify">Therefore, the output voltage V<sub>OUT</sub> is a constant - R<sub>ƒ</sub> C times the derivative of the input voltage V<sub>in</sub> with respect to time. The minus sign indicates an 180&deg; phase shift because the input signal is connected to the inverting input terminal of the operational amplifier.<br />
+One final point to mention, the Op-amp Differentiator circuit in its basic form has two main disadvantages compared to the previous integrator circuit. One is that it suffers from instability at high frequencies as mentioned above, and the other is that the capacitive input makes it very susceptible to random noise signals and any noise or harmonics present in the source circuit will be amplified more than the input signal itself. This is because the output is proportional to the slope of the input voltage so some means of limiting the bandwidth in order to achieve closed-loop stability is required.<br /><br />
+</p><br />
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampDifferentiator-I/Differentiator-C1.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.1 Shows Input Signal (Red) and Output Signal (Yellow)</font></center></span>
+</center><br /><br />
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampDifferentiator-I/Differentiator-C2.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.2 Shows Input Signal (Red) and Output Signal (Yellow)</font></center></span>
+</center>
+
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Theory</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="DiodeClamper_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="DiodeClamper_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="DiodeClamper_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="DiodeClamper_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="DiodeClamper_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="DiodeClamper_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="DiodeClamper_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="DiodeClamper_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Diode Clamper </b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Theory</b></font><br /><br />
+       
+<font size="2" ><b>
+<p align="justify">
+<ul>
+There are two basic types of clampers:
+<li>A positive clamper shifts its input waveform in a positive direction, so that it lies above a dc reference voltage. For example, the positive clamper in figure below shifts the input waveform so that it lies above 0 V (the dc reference voltage).</li>
+<li>A negative clamper shifts its input waveform in a negative direction, so that it lies below a dc reference voltage.</li>
+</ul>
+Both types of clampers, along with their input and output waveforms, are shown in Figure. The direction of the diode determines whether the circuit is a positive or negative clamper.<br /><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeClamper-I/DC-T1.jpg" BORDER=0></td></tr></table>
+<span><center><br /><font size="2">Fig.1 (a) Shows Positive Clamper & (b) Shows Negative Clamper</font></center></span><br />
+</center> 
+
+<p align="justify">
+<ol>
+For a clamping circuit at least three components — a diode, a capacitor and a resistor are required. Sometimes an independent dc supply is also required to cause an additional shift. The important points regarding clamping circuits are:
+<li>The shape of the waveform will be the same, but its level is shifted either upward or downward.</li>
+
+<li>There will be no change in the peak-to-peak or rms value of the waveform due to the clamping circuit. Thus, the input waveform and output waveform will have the same peak-to-peak value that is, 2 V<sub>max</sub>. This is shown in the figure above. It must also be noted that same readings will be obtained in the ac voltmeter for the input voltage and the clamped output voltage.</li>
+
+<li>There will be a change in the peak and average values of the waveform. In the figure shown above, the input waveform has a peak value of V<sub>max</sub> and average value over a complete cycle is zero. The clamped output varies from 2 V<sub>max</sub> and 0 (or 0 and - 2 V<sub>max</sub>). Thus the peak value of the clamped output is 2 V<sub>max</sub> and average value is V<sub>max</sub>.</li>
+
+<li>The values of the resistor R and capacitor C affect the waveform. </li>
+<li>The values for the resistor R and capacitor C should be determined from the time constant equation of the circuit, t = RC. The values must be large enough to make sure that the voltage across the capacitor C does not change significantly during the time interval the diode is non-conducting. In a good clamper circuit, the circuit time constant t = RC should be at least ten times the time period of the input signal voltage.</li>
+</ol>
+It is advantageous to first consider the condition under which the diode becomes forward biased. Clamping circuits are often used in television receivers as dc restorers. The signal that is sent to the TV receiver may lose the dc components after being passed through capacitor coupled amplifiers. Thus the signal loses its black and white reference levels and the blanking level. Before passing these signals to the picture tube, these reference levels have to be restored. This is done by using clamper circuits. They also find applications in storage counters, analog frequency meter, capacitance meter, divider and stair-case waveform generator.<br /><br />
+
+Consider a negative clamping circuit, a circuit that shifts the original signal in a vertical downward direction, as shown in the figure below. The diode D will be forward biased and the capacitor C is charged with the polarity shown, when an input signal is applied. During the positive half cycle of input, the output voltage will be equal to the barrier potential of the diode, V<sub>0</sub> and the capacitor is charged to ( V – V<sub>Q</sub> ). During the negative half cycle, the diode becomes reverse-biased and acts as an open-circuit. Thus, there will be no effect on the capacitor voltage. The resistance R, being of very high value, cannot discharge C a lot during the negative portion of the input waveform. Thus during negative input, the output voltage will be the sum of the input voltage and the capacitor voltage and  is equal to – V – ( V — V<sub>0</sub> ) or – ( 2 V – V<sub>0</sub> ). The value of the peak-to-peak output will be the difference of the negative and positive peak voltage levels is equal to V<sub>0</sub> - [ - ( 2 V - V<sub>0</sub> ) ] or 2 V.<br /><br />
+
+The figure shown below can be modified into a positive clamping circuit by reconnecting the diode with reversed polarity. The positive clamping circuit moves the original signal in a vertical upward direction. A positive clamping circuit is shown in the figure below. It contains a diode D and a capacitor C as are contained in a negative clamper. The only difference in the circuit is that the polarity of the diode is reversed. The remaining explanation regarding the working of the circuit is the same as it is explained for the negative clamper. To remember which way the dc level of a signal moves, look at figure shown below. Notice that the diode arrows point downward, the same direction as the dc shift.
+</p>
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeClamper-I/DC-T2.jpg" BORDER=0></td></tr></table>
+<span><center><br /><font size="2">Fig.2 Negative Clamper</font></center></span><br />
+</center> 
+<p align="justify"> Similarly in the figure shown below, the diode arrow points upward, again the same direction as the dc shifts. It means that, when the diode points upward. We have a positive dc clamper and when the diode points downward, the circuit is a negative dc clamper.</p>
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeClamper-I/DC-T3.jpg" BORDER=0></td></tr></table>
+<span><center><br /><font size="2">Fig.3 Positive Clamper</font></center></span><br />
+</center> 
+<p align="justify">A number of clamping circuits with their effect on the input signal are shown in the figure above. All the figures shown above have the input and output signals in square waves, the same procedure can be used for sinusoidal inputs. In fact, one approach to the analysis of clamping networks with sinusoidal inputs is to replace the sinusoidal wave signal by a square wave of the same peak values. The resulting output will then form an envelope for the sinusoidal response, as illustrated in the figures in the calculation section. The diodes have been assumed to be ideal and 5 RC >> T/2 in drawing the output waveforms.</p>
+</p>
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

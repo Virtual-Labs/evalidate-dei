@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Theory</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+}
+
+ul {
+	list-style:bullet;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="BJTAmplifier_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="BJTAmplifier_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="BJTAmplifier_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="BJTAmplifier_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="BJTAmplifier_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="BJTAmplifier_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="BJTAmplifier_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="BJTAmplifier_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>BJT Amplifier </b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Theory</b></font><br /><br />
+       
+<font size="2" ><b>
+<center>
+<img src="../../../images/bjt/BJTAmplifier-I/BJTAmplifier-T1.jpg" BORDER=0>
+<span><center><font size="2" >Fig.1 Common Emitter Configuration</font></center></span>
+</center><br />
+Here the emitter terminal is common to both the input and output signal. The arrangement is the same for a PNP transistor. Used in this way the transistor has the advantages of medium input impedance, medium output impedance, high voltage gain and high current gain.<br />
+<center>
+<img src="../../../images/bjt/BJTAmplifier-I/BJTAmplifier-T2.jpg" BORDER=0>
+<span><center><font size="2" >Fig.2 Common Base Configuration</font></center></span>
+</center><br />
+Here the base is the common terminal. Used frequently for RF applications, this stage has the following properties. Low input impedance, high output impedance, unity (or less) current gain and high voltage gain.
+<center>
+<img src="../../../images/bjt/BJTAmplifier-I/BJTAmplifier-T3.jpg" BORDER=0>
+<span><center><font size="2" >Fig.3 Common Collector Configuration</font></center></span>
+</center><br />
+This last configuration is also more commonly known as the emitter follower. This is because the input signal applied at the base is "followed" quite closely at the emitter with a voltage gain close to unity. The properties are a high input impedance, a very low output impedance, a unity (or less) voltage gain and a high current gain. This circuit is also used extensively as a "buffer" converting impedances or for feeding or driving long cables or low impedance loads.<br /><br />
+<center>
+<img src="../../../images/bjt/BJTAmplifier-I/BJTAmplifier-T4.jpg" BORDER=0>
+</center><br /><br />
+<center>
+<img src="../../../images/bjt/BJTAmplifier-I/BJTAmplifier-T5.jpg" BORDER=0>
+<span><center><font size="2" >Fig.4 Circuit diagram of BJT Amplifier</font></center></span>
+</center><br /><br />
+<table>
+<tr>
+<td>
+The circuit works in the following manner:
+<ul>
+<li> The AC input signal V<sub>s</sub> changes the DC base voltage above and below its DC level V<sub>BQ</sub>.</li>
+<li> This voltage change is shown in Figure 4 as V<sub>b</sub>.</li> 
+<li> This changes the DC base current above and below its DC level I<sub>BQ</sub>.</li>
+<li> This current change is shown in Figure 4 as I<sub>b</sub>.</li>
+<li> This change in I<sub>BQ</sub> produces a large change in I<sub>CQ</sub> because of the transistor current gain.</li>
+<li> The increase in I<sub>CQ</sub> decreases the collector voltage V<sub>C</sub> which in turns decreases the collector emitter voltage V<sub>CEQ</sub>. </li>
+<li> As shown in Figure 4, increase in the base voltage V<sub>b</sub> corresponds to decrease in the collector emitter voltage V<sub>ce</sub>. Therefore the output of this amplifier is 180&deg; out of phase with the input voltage.</li>
+</ul>
+</td>
+
+<td>
+<img src="../../../images/bjt/BJTAmplifier-I/BJTAmplifier-T6.jpg" BORDER=0>
+</td>
+</tr>
+</table>
+
+
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

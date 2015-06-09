@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Theory</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+}
+
+ul {
+	list-style:none;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="DiodeClipper_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="DiodeClipper_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="DiodeClipper_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="DiodeClipper_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="DiodeClipper_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="DiodeClipper_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="DiodeClipper_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="DiodeClipper_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Diode Clipper</b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Theory</b></font><br /><br />
+       
+<font size="2" ><b>
+<p align="justify">
+There are two general categories of clippers: series and parallel (or shunt). The series configuration is defined as one where diode is in series with the load, while the shunt clipper has the diode in a branch parallel to theload.</p><br />
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeClipper-I/DCL-T1.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.1 (a) Positive Series Clipper and (b) Positive Shunt Clipper</font></center></span><br /><br />
+</center>
+
+<font size="3">Positive Diode Clipper</font><br />
+In a positive clipper, the positive half cycles of the input voltage will be removed. The circuit arrangements for a positive clipper are illustrated in the figure given below.
+As shown in the figure, the diode is kept in series with the load. During the positive half cycle of the input waveform, the diode ‘D’ is reverse biased, which maintains the output voltage at 0 Volts. Thus causes the positive half cycle to be clipped off. During the negative half cycle of the input, the diode is forward biased and so the negative half cycle appears across the output.
+In Figure (b), the diode is kept in parallel with the load. This is the diagram of a positive shunt clipper circuit. During the positive half cycle, the diode ‘D’ is forward biased and the diode acts as a closed switch. This causes the diode to conduct heavily. This causes the voltage drop across the diode or across the load resistance R<sub>L</sub> to be zero. Thus output voltage during the positive half cycles is zero, as shown in the output waveform. During the negative half cycles of the input signal voltage, the diode D is reverse biased and behaves as an open switch. Consequently the entire input voltage appears across the diode or across the load resistance R<sub>L</sub> if R is much smaller than R<sub>L</sub>.<br /><br />
+Actually the circuit behaves as a voltage divider with an output voltage of [ R<sub>L</sub> / R + R<sub>L</sub> ] V<sub>max</sub> = - V<sub>max</sub> when R<sub>L</sub> >> R <br /><br />
+
+<font size="3">Negative Diode Clipper</font><br />
+The negative clipping circuit is almost same as the positive clipping circuit, with only one difference. If the diode in figures (a) and (b) is reconnected with reversed polarity, the cir-cuits will become for a negative series clipper and negative shunt clipper respectively. The negative series and negative shunt clippers are shown in figures (a) and (b) as given below.<br /><br />
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeClipper-I/DCL-T2.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.2 (a) Negative Series Clipper and (b) Negative Shunt Clipper</font></center></span><br /><br />
+</center>
+
+In all the above discussions, the diode is considered to be ideal one. In a practical diode, the breakdown voltage will exist (0.7 V for silicon and 0.3 V for Germanium). When this is taken into account, the output wave¬forms for positive and negative clippers will be of the shape shown in the figure below.<br /><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeClipper-I/DCL-T3.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.3 (a) Output Waveform for Positive Clipper and (b) Output Waveform for Negative Clipper</font></center></span><br /><br />
+</center>
+
+Figure below shows different clipping circuits.<br /><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeClipper-I/DCL-T4.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.4 Different Clipping Circuits</font></center></span><br /><br />
+</center>
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Calculations</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="OpampIntegrator_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="OpampIntegrator_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="OpampIntegrator_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="OpampIntegrator_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="OpampIntegrator_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="OpampIntegrator_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="OpampIntegrator_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="OpampIntegrator_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+<div class="container_1" align="left">
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Op-amp Integrator</b></font><br /><br />       
+        <font size="5" color="#054950"> <b>Calculations &amp; Observations</b></font><br /><br /><br />
+<font size="2" ><b>
+<p align="justify">
+We know from first principals that the voltage on the plates of a capacitor is equal to the charge on the capacitor divided by its capacitance giving Q/C. Then the voltage across the capacitor is output V<sub>out</sub>, therefore: - V<sub>out</sub> = Q/C. If the capacitor is charging and discharging, the rate of charge of voltage across the capacitor is given as:<br /><br />
+</p>
+<center>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C1.jpg" BORDER=0>
+</center>
+<br />
+
+But dQ / dt is electric current and since the node voltage of the integrating Op-amp at its inverting input terminal is zero, X = 0, the input current I<sub>in</sub> flowing through the input resistor, R<sub>in</sub> is given as: <br /><br />
+<center>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C2.jpg" BORDER=0>
+</center><br />
+
+The current flowing through the feedback capacitor C is given as: <br /><br />
+<center>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C3.jpg" BORDER=0>
+</center><br />
+
+Assuming that the input impedance of the Op-amp is infinite (ideal Op-amp), no current flows into the Op-amp terminal. Therefore, the nodal equation at the inverting input terminal is given as:<br /><br />
+<center>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C4.jpg" BORDER=0>
+</center><br />
+
+From which we derive an ideal voltage output for the Op-amp Integrator as:<br /><br />
+<center>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C5.jpg" BORDER=0>
+</center>
+
+To simplify the math's a little, this can also be re-written as:<br /><br />
+<center>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C6.jpg" BORDER=0>
+</center><br />
+
+<p align="justify">Where ω = 2πƒ and the output voltage Vout is a constant 1/RC times the integral of the input voltage V<sub>in</sub> with respect to time. The minus sign (-) indicates an 180&deg; phase shift because the input signal is connected directly to the inverting input terminal of the Op-amp.<br /><br />
+</p><br />
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C7.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.1 Shows Input Signal (Red) and Output Signal (Yellow)</font></center></span>
+</center><br /><br />
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/opamp/OpampIntegrator-I/Integrator-C8.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.2 Shows Input Signal (Red) and Output Signal (Yellow)</font></center></span>
+</center>
+
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Theory</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+}
+
+ul {
+	list-style:none;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="RCIntegrator_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="RCIntegrator_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="RCIntegrator_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="RCIntegrator_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="RCIntegrator_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="RCIntegrator_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="RCIntegrator_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="RCIntegrator_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>RC Integrator</b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Theory</b></font><br /><br />
+       
+<font size="2" ><b>
+<p align="justify">A circuit in which the output voltage is proportional to the integral of the input voltage is known as integrating circuit. Resistors and capacitors constitute two of the most ubiquitous circuit elements used in electronics. A capacitor is a circuit element whose function is to store charge between two conductors, hence storing electrical energy in the form of a field E(R, t). This is in contrast to an inductor, which stores energy in the form of a magnetic field B(R, t). The process of storing energy in the capacitor is known as "charging", as an equal amount of charges of opposite sign build on each conductor. A capacitor is defined by its ability to hold charge, which is proportional to the applied voltage,<br /></p>
+<center> Q = C V</center><br />
+<p align="justify">With the proportionality constant C called the capacitance. A simple model for a capacitor consists of two parallel conducting plates of cross-sectional area A separated by air or a dielectric. The presence of the dielectric does not allow for the flow of DC current; therefore a capacitor acts as an open circuit in the presence of a DC current. However, if the voltage across the capacitor terminals changes as a function of time, the charge accumulated on the capacitor plates is given by:<br /></p>
+<center> q (t) = C V (t)</center><br />
+
+Although no current can flow through the capacitor if the voltage across it is constant, a time-varying voltage will cause charge to vary in time. Thus if the charge is changing in time, the current in the circuit is given by:<br /><br />
+<center><img src="../../../images/RC/RCIntegrator-I/RCIntegrator-T1.jpg" BORDER=0></center><br />
+
+The shapes of electrical signals must often be modified to be in a suitable form for operation of circuits. The simple RC circuit often plays a part in the formation of suitable waveforms.<br /><br />
+<center><img src="../../../images/RC/RCIntegrator-I/RCIntegrator-T2.jpg" BORDER=0></center><br />
+<span><center><font size="2" >Fig.1 RC Integrator circuit</font></center></span><br />
+
+<p align="justify">The circuit passes low frequencies readily but attenuates high frequencies because the reactance of the capacitor decreases with increasing frequency. At very high frequencies the capacitor acts as a virtual short circuit and the output falls to zero. This circuit also works as integrating circuit. The condition for integrating circuit is RC value must be much greater than the time period of the input wave (RC >> T).</p><br />
+
+Let V<sub>i</sub> = alternating input voltage and i = resulting current. Applying Kirchhoff’s Voltage Law to RC low pass circuit,<br />
+<center><img src="../../../images/RC/RCIntegrator-I/RCIntegrator-T3.jpg" BORDER=0></center><br />
+
+Multiplying throughout by C, we get<br />
+<center><img src="../../../images/RC/RCIntegrator-I/RCIntegrator-T4.jpg" BORDER=0></center><br />
+
+as RC >> T, the term, " &int;<sub>o</sub><sup>t</sup> i dt " may be neglected<br /><br />
+<center>C V<sub>i</sub> = iRC</center><br />
+Integrating with respect to T on both sides, we get<br /><br />
+<center><img src="../../../images/RC/RCIntegrator-I/RCIntegrator-T5.jpg" BORDER=0></center><br />
+
+<u>Expected Graph:</u><br /><br />
+<center><img src="../../../images/RC/RCIntegrator-I/RCIntegrator-T6.jpg" BORDER=0></center><br />
+
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

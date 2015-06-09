@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Theory</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+}
+
+ul {
+	list-style:none;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="OpampHalfwave_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="OpampHalfwave_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="OpampHalfwave_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="OpampHalfwave_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="OpampHalfwave_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="OpampHalfwave_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="OpampHalfwave_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="OpampHalfwave_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Opamp Half Wave Rectifier</b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Theory</b></font><br /><br />
+       
+<font size="2" ><b>
+<p align="justify">
+<u>Precision Half-Wave Rectifier (Superdiode):</u> This figure shows a precision half-wave-rectifier circuit consisting of a diode placed in the negative-feedback path of an Op-amp, with R being the rectifier load resistance. The circuit works follows: If V1 goes positive, the output voltage V<sub>A</sub> of the Op-amp will go positive and the diode will conduct, thus establishing a closed feedback path between the Op-amp's output terminal and the negative input terminal. This negative feedback path will cause a virtual short circuit to appear between the two input terminals. Thus the voltage at the negative input terminal, which is also the output voltage V<sub>o</sub>, will equal (to within a few mill-volts) that at the positive input terminal, which is the input voltage V<sub>i</sub>, </p>
+<center>V<sub>o</sub> = V<sub>i</sub>,     V<sub>i</sub> &ge; 0</center><br />
+Note that the offset voltage ( ≈ 0.5 V ) exhibited in the simple half-wave rectifier circuit is no longer present. For the Op-amp circuit to start operation, V<sub>i</sub> has to exceed only a negligible small voltage equal to the diode drop divided by the Op-amp's open-loop gain.<br /><br />
+<center>
+<img src="../../../images/opamp/OpampHalfwave-I/OpampHalfwave-T1.jpg" BORDER=0>
+<span><center><font size="2" >Fig.1 Opamp Half Wave Rectifier Circuit</font></center></span>
+</center><br /><br />
+
+<p align="justify">Consider now the case when V<sub>i</sub> goes negative. The op amp's output voltage V<sub>A</sub> will tend to follow and go negative. This will reverse-bias the diode, and no current will flow through resistance R, causing V<sub>o</sub> to remain equal to 0 V. Thus V<sub>i</sub> &lt; 0, V<sub>i</sub> = 0. Since in this case the diode is off, the Op-amp will be operating in an open loop and its output will be at the negative saturation level.<br /><br />
+	The transfer characteristic of this circuit is shown in above figure, which is almost identical to the ideal characteristic of a half-wave rectifier. The non-ideal diode characteristics have been almost completely masked by placing the diode in the negative-feedback path of an Op-amp. This is another dramatic application of negative feedback. The combination of diode and Op-amp is appropriately referred to as a “Superdiode”.
+</p>
+</b>
+</font>
+</div>
+</div>
+</body>
+</html>

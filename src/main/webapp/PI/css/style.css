@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+body.profile /* gives backgroud to whole page */
+{ 
+	background-color: #E6F1F5 !important;
+}
+
+#head  /* Text on blue Bar */
+{
+	font-family:Arial;
+	font-size:16px;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding-left:10px
+}
+
+/* Bottom Links starts */
+a.bottom_links
+{
+	font-family:Verdana,Tahoma,Arial;
+	font-SIZE:10px;
+	color:#0099FF;
+	text-decoration:underline;
+	cursor:hand;
+	cursor:pointer
+}
+a.bottom_links:hover
+{
+	text-decoration:none
+}
+/* Bottom Links ends */
+
+/* Side Bar starts */
+ul
+{
+	list-style:none;
+	margin:0;
+	padding:0
+}
+ul li
+{
+	padding-left:0px;
+	margin:.2em 10
+}
+ul li.name
+{
+	font-family:Tahoma,Arial;
+	font-size:12px;
+	color:#000033;
+	line-height:20px
+}
+#side_bar li a
+{
+	display:block;
+	font-family:Tahoma,Arial;
+	font-size:12px;
+	color:#0066CC;
+	text-decoration:none;
+	letter-spacing:0.08em;
+	line-height:20px;
+	cursor:hand;
+	cursor:pointer;
+}
+#side_bar li:hover>a
+{
+	display:block;
+	text-decoration:none;
+	color:#a8032a;
+	text-transform:uppercase;
+}
+#sideBottom li a 	 /* side bar related links */
+{
+    font-family:Tahoma,Arial;
+	font-size:12px;
+	color:#333;
+	text-decoration:none;
+	line-height:18px;
+	cursor:hand;
+	cursor:pointer;
+}
+#sideBottom li:hover>a 		 /* side bar related links hover */
+{
+    text-decoration:none;
+	color:#a8032a;
+	text-transform:uppercase;
+	letter-spacing:0.1em;	
+}
+/* Side Bar ends */
+
+/* div info for main information starts*/
+#info{
+	color:#333333;	
+	font-family:Tahoma,Arial;
+	line-height:20px;
+	letter-spacing:.1pt;
+	margin-top:20px;
+	margin-bottom:0px;
+	margin-right:30px;
+	margin-left:30px;
+}
+#info a:link 
+{
+	text-decoration:none; 
+	color:#333;
+}
+#info a:visited 
+{
+	text-decoration:none; 
+	color:#333;
+}
+#info a:hover 
+{
+	text-decoration:none;
+	color:#CC6600;
+	letter-spacing:0.1pt
+}
+#info li
+{
+	line-height:27px;
+	text-align:justify;
+}
+
+#info1{   /* for supervisions */
+	color:#333333;	
+	font-family:Tahoma,Arial;
+	line-height:20px;
+	letter-spacing:.1pt;	
+}
+
+#scrollable  	/* to scroll main text table */
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+a.changeColor:link  /* link color for back to.. link */
+{
+     color: blue;
+}
+a.changeColor:hover /* link hover color for back to.. link */
+{ 
+     color: #CC6600;
+}
+/* div info for main information ends*/
+
+/* Top Links starts */
+#top_bar .links,.links
+{
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	line-height:0px;
+	font-size:1px
+}
+#top_bar li
+{
+	list-style:none;
+	font-size:1px;
+	float:right;
+}
+#top_bar a
+{
+	display:block;
+	position:relative
+}
+#top_menu li a, .top_menu 
+{
+	color:#ffffff;
+	text-align:center;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+	border-color:#dddddd;
+	border-width:1px;
+	padding:0px 28px 0px 0px;
+	margin-left:27px;
+	margin-right:26px;
+}
+#top_menu li:hover>a
+{
+	text-decoration:none;
+	color:#CC6600;
+	font-stretch:expanded;
+}
+#top_menu li:active>a
+{
+	color:#CC6600;
+	text-decoration:underline;
+}
+#top_menu li:visited>a
+{
+	color: #000;
+	text-decoration:none;	
+}
+/* Top Links starts */
+
+a
+{
+	font-family:Tahoma,Arial;
+	font-size:12px;
+	color:#0066CC;
+	text-decoration:none;
+	line-height:18px;
+	cursor:hand;
+	cursor:pointer
+}
+a:hover
+{
+	text-decoration:none;
+	color:#0066CC;
+}

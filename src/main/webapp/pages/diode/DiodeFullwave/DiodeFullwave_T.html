@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Theory</title>
+
+<link href="../../../style/default.css" rel="stylesheet" type="text/css">
+<link href="../../../style/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../style/glowtabs.css" />
+<script type="text/javascript" src="../../../scripts/ddtabmenu.js"></script>
+
+
+
+<style type="text/css">
+
+body {
+  line-height: 2;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-right:20px;
+  margin-left:20px;
+  text-align:justify;
+}
+
+li {
+	margin:1em;
+	margin-left: 2em;
+}
+
+ul {
+	list-style:none;
+} 
+
+.sidebar1_1 {
+	float: center;
+	width: 91%;
+	background: #fffff;
+	padding-left: 40px;
+	
+	background-size: contain;
+}
+.content_1 {
+	padding: 10px 0;
+	width: 20%;
+	float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="ddtabs2" class="glowingtabs">
+<ul>
+<li><a href="DiodeFullwave_I.html"><span><center><img src="../../../images/tabs/clipart-binder.jpg" width="58px" height="50px" alt=""/><br/>Introduction</center></span></a></li>
+<li><a href="DiodeFullwave_T.html"><span><center><img src="../../../images/tabs/theory.jpg" width="58px" height="50px" alt=""/><br/>Theory</center></span></a></li>
+<li><a href="DiodeFullwave_C.html"><span><center><img src="../../../images/tabs/simple_calculator_01.png" width="58px" height="50px" alt=""/><br/>Calculations</center></span></a></li>
+<li><a href="DiodeFullwave_R.html"><span><center><img src="../../../images/tabs/Tools_clipart.png" width="58px" height="50px" alt=""/><br/>Components</center></span></a></li>
+<li><a href="DiodeFullwave_P.html"><span><center><img src="../../../images/tabs/procedure.jpg" width="58px" height="50px" alt=""/><br/>Procedure</center></span></a></li>
+<li><a href="DiodeFullwave_L.html"><span><center><img src="../../../images/tabs/sim.jpg" alt="" /><br/>Live Experiment</center></span></a></li>
+<li><a href="DiodeFullwave_Q.html"><span><center><img src="../../../images/tabs/clipartpencilsurvey.gif" width="58px" height="50px" alt=""><br/>Questionnair</center></span></a></li>
+<li><a href="DiodeFullwave_V.html"><span><center><img src="../../../images/tabs/video.jpg" width="58px" height="50px" alt=""/><br/>Video Tutorial</center></span></a></li>
+</ul>
+
+</div>
+
+<div class="container_1" align="left">
+
+  <div class="sidebar1_1">
+<br />
+       <font size="+3" color="#AD235E" ><br /> <b>Full Wave Rectifier</b></font><br /><br />
+       
+        <font size="5" color="#054950"> <b>Theory</b></font><br /><br />
+       
+<font size="2" ><b>
+<p align="justify">
+In a Full Wave Rectifier circuit two diodes are now used, one for each half of the cycle. A multiple winding transformer is used whose secondary winding is split equally into two halves with a common centre tapped connection, (C). This configuration results in each diode conducting in turn when its anode terminal is positive with respect to the transformer centre point C producing an output during both half-cycles, twice that for the half wave rectifier so it is 100% efficient as shown below.</p><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeFullwave-I/FW-T1.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.1 Full Wave Rectifier Circuit</font></center></span>
+</center>
+<br />
+
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeFullwave-I/FW-T2.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.2 Resultant Output Waveform</font></center></span>
+</center>
+<br />
+<p align="justify">
+The full wave rectifier circuit consists of two power diodes connected to a single load resistance (R<sub>L</sub>) with each diode taking it in turn to supply current to the load. When point A of the transformer is positive with respect to point C, diode D1 conducts in the forward direction as indicated by the arrows. When point B is positive (in the negative half of the cycle) with respect to point C, diode D2 conducts in the forward direction and the current flowing through resistor R is in the same direction for both half-cycles. As the output voltage across the resistor R is the phasor sum of the two waveforms combined, this type of full wave rectifier circuit is also known as a "bi-phase" circuit.<br /><br />
+As the spaces between each half-wave developed by each diode is now being filled in by the other diode the average DC output voltage across the load resistor is now double that of the single half-wave rectifier circuit and is about  0.637 V<sub>max</sub>  of the peak voltage, assuming no losses.</p><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeFullwave-I/FW-T3.jpg" BORDER=0></td></tr></table>
+</center><br />
+<p align="justify">Where, V<sub>MAX</sub> is the maximum peak value in one half of the secondary winding and V<sub>RMS</sub> is the rms value.
+The peak voltage of the output waveform is the same as before for the half-wave rectifier provided each half of the transformer windings have the same rms voltage value. To obtain a different DC voltage output different transformer ratios can be used. The main disadvantage of this type of full wave rectifier circuit is that a larger transformer for a given power output is required with two separate but identical secondary windings making thistype of full wave rectifying circuit costly compared to the "Full Wave Bridge Rectifier" circuit equivalent.<br /><br /></p>
+
+<font size="3">Full Wave Bridge Rectifier</font><br />
+<p align="justify">
+Another type of circuit that produces the same output waveform as the full wave rectifier circuit above is that of the Full Wave Bridge Rectifier. This type of single phase rectifier uses four individual rectifying diodes connected in a closed loop "bridge" configuration to produce the desired output. The main advantage of this bridge circuit is that it does not require a special centre tapped transformer, thereby reducing its size and cost. The single secondary winding is connected to one side of the diode bridge network and the load to the other side as shown below.<br /><br /></p>
+
+<font size="3">Diode Bridge Rectifier</font><br /><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeFullwave-I/FW-T4.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.4 Diode Bridge Rectifier</font></center></span>
+</center><br />
+<p align="justify">The four diodes labeled D1 to D4 are arranged in "series pairs" with only two diodes conducting current during each half cycle. During the positive half cycle of the supply, diodes D1 and D2 conduct in series while diodes D3 and D4 are reverse biased and the current flows through the load as shown below.<br /><br /></p>
+
+<font size="3">Positive Half-cycle</font><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeFullwave-I/FW-T5.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.5 Positive Half-cycle</font></center></span>
+</center><br />
+During the negative half cycle of the supply, diodes D3 and D4 conduct in series, but diodes D1 and D2switch "OFF" as they are now reverse biased. The current flowing through the load is the same direction as before.<br /><br />
+
+<font size="3">Negative Half-cycle</font><br />
+<center>
+<table border="0">
+<tr valign="top">
+<td>
+<img src="../../../images/diode/DiodeFullwave-I/FW-T6.jpg" BORDER=0></td></tr></table>
+<span><center><font size="2" >Fig.6 Negative Half-cycle</font></center></span>
+</center><br />
+As the current flowing through the load is unidirectional, so the voltage developed across the load is also unidirectional the same as for the previous two diode full-wave rectifier, therefore the average DC voltage across theload is 0.637 V<sub>max</sub>. However in reality, during each half cycle the current flows through two diodes instead of just one so the amplitude of the output voltage is two voltage drops ( 2 x 0.7 = 1.4 V ) less than the input V<sub>max</sub> amplitude. The ripple frequency is now twice the supply frequency (e.g. 100 Hz for a 50 Hz supply)
+ </b>
+</font>
+</div>
+</div>
+</body>
+</html>
