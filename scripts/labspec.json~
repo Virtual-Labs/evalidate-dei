@@ -4,7 +4,7 @@
             "platform": {
                 "arch": "i386", 
                 "build_steps": {
-                    "build": ["make -C ../src"], 
+                    "build": [], 
                     "configure": [], 
                     "post_build": [], 
                     "pre_build": [], 
@@ -49,11 +49,11 @@
                 "arch": "i386", 
                 "hosting": "dedicated", 
                 "installer": ["sudo apt-get update",
-                "sudo apt-get install -y maven2 "], 
+                "sudo apt-get install -y maven2 apache2 "], 
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 
-                    "init": ["cp -r ../build/* /var/www/","mv /var/www/index.html index.html.default"
+                    "init": [""
                         ], 
                     "pause": [], 
                     "publish": [], 
