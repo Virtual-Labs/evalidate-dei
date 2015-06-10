@@ -47,14 +47,22 @@
         "runtime_requirements": {
             "platform": {
                 "arch": "i386", 
-                "hosting": "dedicated", 
-                "installer": ["sudo apt-get update",
-                "sudo apt-get install -y maven2 apache2 "], 
+                "hosting": "dedicated",
+		"installer": ["sudo apt-get update",
+				"sudo apt-get install -y openjdk-7-jdk",
+                            	"sudo apt-get install -y tomcat7",
+                            	"sudo apt-get install -y tomcat7-admin",
+				"sudo apt-get install -y maven2",
+				"sudo apt-get install -y iverilog"
+		], 
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 
-                    "init": [""
-                        ], 
+                    "init": ["rm /usr/shar/maven2/conf/setting.xml",
+                             "cp ../scripts/setting.xml /usr/shar/mavan2/conf/setting.xml",
+                             "mvn clean install",
+                             "cp -r /root/labs/evalidate-dei/target/evalidate-dei-1.0-SNAPSHOT.war /var/lib/tomcat7/webapps/",
+                             "service apache2 restart"], 
                     "pause": [], 
                     "publish": [], 
                     "restore": [], 
