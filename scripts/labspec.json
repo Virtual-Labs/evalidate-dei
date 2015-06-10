@@ -61,7 +61,7 @@
                     "init": ["rm /usr/share/maven2/conf/settings.xml",
                              "cp /root/labs/evalidate-dei/scripts/settings.xml /usr/share/maven2/conf",
                              "cd /root/labs/evalidate-dei/",
-                             "mvn clean"
+                             "mvn clean",
                              "mvn clean install",
                              "cp -r /root/labs/evalidate-dei/target/evalidate-dei-1.0-SNAPSHOT /var/lib/tomcat7/webapps/",
                              "service apache2 restart"], 
