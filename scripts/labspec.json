@@ -49,7 +49,7 @@
                 "arch": "i386", 
                 "hosting": "dedicated",
 		"installer": ["apt-get update",
-				"apt-get install -y openjdk-6-jdk",
+				"apt-get install -y openjdk-7-jdk",
 				"apt-get install -y default-jdk",
                             	"apt-get install -y tomcat7",
                             	"apt-get install -y tomcat7-admin",
