@@ -62,9 +62,10 @@
                     "init": ["rm /usr/share/maven2/conf/settings.xml",
                              "cp ./settings.xml /usr/share/maven2/conf",
                              "cd ../ && mvn clean && mvn clean install",
-                             "bash ../scripts/apache_config.sh",
                              "cp -r ../target/evalidate-dei-1.0-SNAPSHOT /var/lib/tomcat7/webapps/",
-                             "service tomcat7 restart"], 
+                             "service tomcat7 restart",
+                             "bash ../scripts/apache_config.sh"], 
+                             
                     "pause": [], 
                     "publish": [], 
                     "restore": [], 
