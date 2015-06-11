@@ -95,7 +95,7 @@ under the License.
       <id>optional</id>
       <active>true</active>
       <protocol>http</protocol>
-      <username>vlabcses</username>
+      <username>vlabcse</username>
       <password>vlabcse</password>
       <host>202.141.80.30</host>
       <port>3128</port>
