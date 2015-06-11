@@ -7,5 +7,5 @@ apache_vhost_file="/etc/apache2/sites-available/default"
 # using sed
 sed -i '/<\/VirtualHost>/i \
 ProxyPassMatch    ^/web(.*) http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/
-ProxyPassReverse  ^/web(.*) http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/
+ProxyPassReverse  ^/web(.*) http://localhost:8080/evalidate-dei-1.0-SNAPSHOT
 ' $apache_vhost_file
