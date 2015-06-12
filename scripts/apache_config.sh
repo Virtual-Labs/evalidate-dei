@@ -6,6 +6,6 @@ apache_vhost_file="/etc/apache2/sites-available/default"
 # Add proxy pass lines at the end of the apache config file
 # using sed
 sed -i '/<\/VirtualHost>/i \
-ProxyPassMatch    ^/web(.*) http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/$1\
-ProxyPassReverse  ^/web(.*) http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/$1
+ProxyPassMatch    / http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/
+ProxyPassReverse  / http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/
 ' $apache_vhost_file
