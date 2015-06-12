@@ -9,3 +9,4 @@ sed -i '/<\/VirtualHost>/i \
 ProxyPassMatch    / http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/
 ProxyPassReverse  / http://localhost:8080/evalidate-dei-1.0-SNAPSHOT/
 ' $apache_vhost_file
+a2enmod proxy_http
