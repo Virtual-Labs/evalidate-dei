@@ -64,7 +64,7 @@
                     	     "cd ../ && mvn clean && mvn clean install",
                              "cp -r ../target/evalidate-dei-1.0-SNAPSHOT /var/lib/tomcat7/webapps/",
                              "service tomcat7 restart",
-                             "bash ../scripts/apache_config.sh"
+                             "bash ../scripts/apache_config.sh",
                              "service apache2 restart"], 
                              
                     "pause": [], 
